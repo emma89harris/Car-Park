@@ -130,7 +130,6 @@ class DB:
 
         set_statement = self.get_whole_statement_sql(changes, ",")
 
-        print("executing statement...")
         self._cursor.execute(f"""
             UPDATE RegisteredEmployees
             SET {set_statement}
@@ -213,7 +212,6 @@ class DB:
                 else:
                     new_value = date_range[0] + "--" + date_range[1]
         
-        print("updating record...")
         self.update_record(EmployeeID, {"ReservedDates": new_value})
         self._availability[status] -= 1
 
