@@ -408,6 +408,7 @@ if __name__ == "__main__":
     import pyodbc
     import datetime
 
+    # file path will be different on different devices
     conn = pyodbc.connect(r"Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=C:\Users\emma8\OneDrive\Documents\JP Morgan\employees.accdb;")
     cursor = conn.cursor()
 
