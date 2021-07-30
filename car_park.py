@@ -416,7 +416,7 @@ if __name__ == "__main__":
     EI = AppUI(cursor)
     EI.run()
 
-    SI = SecurityUI(cursor)
-    SI.run()
+    # SI = SecurityUI(cursor)
+    # SI.run()
 
     conn.commit()
