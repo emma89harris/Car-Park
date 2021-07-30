@@ -262,6 +262,7 @@ class DB:
             print(f"{row[0]:<11}| {row[1]:<17}| {row[2]:<25}| {row[3]:<8}| {row[4]:<14}| {row[5]}")
         print()
 
+        
 class AppUI(DB):
 
     def __init__(self, cursor):
